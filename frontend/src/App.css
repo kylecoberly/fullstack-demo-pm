@@ -3,9 +3,3 @@
 .App {
 	font-family: "Roboto", sans-serif;
 }
-
-.DogList {
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
-}
