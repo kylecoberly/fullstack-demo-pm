@@ -1,10 +1,22 @@
 import './DogList.css';
 import DogListing from './DogListing';
 import { useState } from "react"
-import initialDogs from "./dogs.json"
+import { useEffect } from "react"
+
+const apiUrl = process.env.API_URL || "http://localhost:4000"
 
 function App() {
-	const [dogs, setDogs] = useState(initialDogs)
+	const [dogs, setDogs] = useState([])
+
+	useEffect(() => {
+		fetch(`${apiUrl}/dogs`)
+			.then(response => response.json())
+			.then(({ dogs }) => {
+				setDogs(dogs)
+			}).catch(error => {
+				console.error(error.message)
+			})
+	}, [])
 
 	return (
 		<ul className="DogList">
