@@ -23,20 +23,6 @@ header > h1 {
 	margin-bottom: 12px;
 }
 
-.DogListing {
-	width: 300px;
-	margin-bottom: 36px;
-}
-
-.DogListing > p {
-	font-weight: 700;
-	margin: 12px 0;
-}
-
-.DogListing img {
-	border-radius: 5px;
-}
-
 img {
 	max-width: 100%;
 }
