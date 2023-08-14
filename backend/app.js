@@ -1,12 +1,13 @@
 const express = require("express")
 const cors = require("cors")
+const dogs = require("./dogs")
 
 const app = express()
 app.use(cors())
 
-app.get("/", (request, response) => {
+app.get("/dogs", (request, response) => {
 	response.json({
-		message: "Hello, world!",
+		dogs,
 	})
 })
 
