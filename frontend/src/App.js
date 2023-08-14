@@ -1,13 +1,11 @@
 import './App.css';
 import DogListing from './DogListing';
+import AppHeader from './AppHeader';
 
 function App() {
 	return (
 		<div className="App">
-			<header>
-				<h1>Barkwire</h1>
-				<p>A dating app for dogs</p>
-			</header>
+			<AppHeader />
 			<ul className="DogList">
 				<li>
 					<DogListing

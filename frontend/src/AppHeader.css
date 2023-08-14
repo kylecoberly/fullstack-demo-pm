@@ -1,0 +1,16 @@
+.AppHeader {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	padding: 24px;
+}
+
+.AppHeader > p {
+	font-style: italic;
+}
+
+.AppHeader > h1 {
+	font-size: 36px;
+	margin-bottom: 12px;
+}
+
